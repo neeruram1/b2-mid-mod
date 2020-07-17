@@ -7,3 +7,7 @@
   <li><%= ride.name %></li>
   <% end %>
 </ol>
+
+<% if @amusement_park.rides.empty? == false %>
+<p>Average Thrill Rating of Rides: <%= @amusement_park.rides.avg_thrill_rating %>/10</p>
+<% end %>

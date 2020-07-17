@@ -5,6 +5,7 @@ RSpec.describe "Amusement Park show page" do
     @space_mountain = Ride.create(name: "Space Mountain", thrill_rating: 6, amusement_park: @disney)
     @splash_mountain = Ride.create(name: "Splash Mountain", thrill_rating: 8, amusement_park: @disney)
     @its_a_small_world = Ride.create(name: "It's A Small World", thrill_rating: 2, amusement_park: @disney)
+    @universal = AmusementPark.create(name: "Universal Studios", admission_price: 75)
   end
 
   it "I see the name and price of admissions for that amusement park" do
@@ -26,5 +27,8 @@ RSpec.describe "Amusement Park show page" do
     visit "/amusement_parks/#{@disney.id}"
 
     expect(page).to have_content("Average Thrill Rating of Rides: 5.3/10")
+
+    visit "/amusement_parks/#{@universal.id}"
+    expect(page).to_not have_content("Average Thrill Rating of Rides:")
   end
 end
