@@ -33,8 +33,10 @@ RSpec.describe "Mechanic's show page" do
     visit "/mechanics/#{@mechanic1.id}"
 
     expect(page).to have_content("Add a Ride to Workload:")
+
     fill_in :id, with: @haunted_mansion.id
     click_on "Submit Ride"
+    
     expect(current_path).to eq("/mechanics/#{@mechanic1.id}")
 
     within (".mechanic-ride-list") do

@@ -5,5 +5,12 @@
 <ul class="mechanic-ride-list">
   <% @mechanic.rides.each do |ride| %>
   <li><%= ride.name %></li>
-  <% end %> 
+  <% end %>
 </ul>
+
+<p>Add a Ride to Workload:</p>
+<%= form_tag "/mechanics/#{@mechanic.id}/rides", method: :post do %>
+<%= label_tag :id %>
+<%= text_field_tag :id %>
+<%= submit_tag "Submit Ride" %>
+<% end %>
