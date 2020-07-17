@@ -21,32 +21,10 @@ RSpec.describe "Amusement Park show page" do
     expect(page).to have_content(@space_mountain.name)
     expect(page).to have_content(@splash_mountain.name)
   end
-  #
-  # it "I see the average thrill rating of this amusement park’s rides" do
-  #   visit "/amusement_parks/#{@disney.id}"
-  #
-  # end
+
+  it "I see the average thrill rating of this amusement park’s rides" do
+    visit "/amusement_parks/#{@disney.id}"
+
+    expect(page).to have_content("Average Thrill Rating of Rides: 5.3/10")
+  end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Ex: Hershey Park
-#    Admissions: $50.00
-#
-#    Rides:
-#           1. Lightning Racer
-#           2. Storm Runner
-#           3. The Great Bear
-#    Average Thrill Rating of Rides: 7.8/10
