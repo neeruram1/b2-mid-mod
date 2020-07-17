@@ -17,9 +17,9 @@ RSpec.describe "Amusement Park show page" do
   it "I see the names of all the rides that are at that theme park listed in alphabetical order" do
     visit "/amusement_parks/#{@disney.id}"
 
-    expect(page).to have_content("1. #{@its_a_small_world.name}")
-    expect(page).to have_content("2. #{@space_mountain.name}")
-    expect(page).to have_content("3. #{@splash_mountain.name}")
+    expect(page).to have_content(@its_a_small_world.name)
+    expect(page).to have_content(@space_mountain.name)
+    expect(page).to have_content(@splash_mountain.name)
   end
   #
   # it "I see the average thrill rating of this amusement park’s rides" do

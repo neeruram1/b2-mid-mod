@@ -1,2 +1,9 @@
 <h1><%= @amusement_park.name %></h1>
 <p>Admission: $<%= @amusement_park.admission_price %></p>
+<h2>Rides:</h2>
+
+<ol type="1" class="ride-list">
+  <% @amusement_park.rides.alpha_order.each do |ride| %>
+  <li><%= ride.name %></li>
+  <% end %>
+</ol>
