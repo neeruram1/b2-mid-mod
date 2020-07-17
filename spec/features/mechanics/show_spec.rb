@@ -29,18 +29,16 @@ RSpec.describe "Mechanic's show page" do
     end
   end
 
-  # it "I also see a form to add a ride to their workload" do
-  #   # When I fill in that field with an id of an existing ride and hit submit
-  #   # I’m taken back to that mechanics show page
-  #   # And I see the name of that newly added ride on this mechanics show page
-  #
-  # end
+  it "I also see a form to add a ride to their workload" do
+    visit "/mechanics/#{@mechanic1.id}"
+
+    expect(page).to have_content("Add a Ride to Workload:")
+    fill_in :id, with: @haunted_mansion.id
+    click_on "Submit Ride"
+    expect(current_path).to eq("/mechanics/#{@mechanic1.id}")
+
+    within (".mechanic-ride-list") do
+      expect(page).to have_content(@haunted_mansion.name)
+    end
+  end
 end
-
-
-
-
-
-# Add a ride to workload:
-# _pretent_this_is_a_textfield_
-#                       Submit
