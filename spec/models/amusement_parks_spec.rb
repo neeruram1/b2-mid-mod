@@ -6,6 +6,6 @@ RSpec.describe AmusementPark, type: :model do
   end
 
   describe "relationships" do
-    it {should have_many :rides}
+    it { should have_many :rides }
   end
 end

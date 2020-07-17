@@ -6,7 +6,6 @@ RSpec.describe "Mechanics index page" do
   end
 
   it "I see a header saying All Mechanics and I see a list of their names and years of experience" do
-
     visit '/mechanics'
 
     within(".mechanics-header") do

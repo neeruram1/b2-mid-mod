@@ -18,6 +18,7 @@ RSpec.describe "Mechanic's show page" do
 
   it "I see their name, years of experience, and names of all rides they’re working on" do
     visit "/mechanics/#{@mechanic1.id}"
+    
     expect(page).to have_content("Mechanic: #{@mechanic1.name}")
     expect(page).to have_content("Years of Experience: #{@mechanic1.years_of_exp}")
     expect(page).to have_content("Current Rides They're Working On:")
@@ -36,7 +37,7 @@ RSpec.describe "Mechanic's show page" do
 
     fill_in :id, with: @haunted_mansion.id
     click_on "Submit Ride"
-    
+
     expect(current_path).to eq("/mechanics/#{@mechanic1.id}")
 
     within (".mechanic-ride-list") do
