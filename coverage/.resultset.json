@@ -215,7 +215,7 @@
           null
         ]
       },
-      "/Users/nirupamaram/turing/2module/b2-mid-mod/app/models/amusement_park.rb": {
+      "/Users/nirupamaram/turing/2module/b2-mid-mod/app/models/ride.rb": {
         "lines": [
           1,
           1,
@@ -231,6 +231,6 @@
         ]
       }
     },
-    "timestamp": 1594998531
+    "timestamp": 1594998681
   }
 }
