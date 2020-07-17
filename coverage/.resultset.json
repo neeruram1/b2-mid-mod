@@ -215,10 +215,8 @@
           null
         ]
       },
-      "/Users/nirupamaram/turing/2module/b2-mid-mod/app/models/ride.rb": {
+      "/Users/nirupamaram/turing/2module/b2-mid-mod/app/models/amusement_park.rb": {
         "lines": [
-          1,
-          1,
           1,
           1,
           1,
@@ -233,12 +231,15 @@
           null
         ]
       },
-      "/Users/nirupamaram/turing/2module/b2-mid-mod/app/models/amusement_park.rb": {
+      "/Users/nirupamaram/turing/2module/b2-mid-mod/spec/models/mechanic_ride_spec.rb": {
         "lines": [
           1,
+          null,
           1,
           1,
-          1,
+          2,
+          2,
+          null,
           null
         ]
       },
@@ -247,6 +248,22 @@
           1,
           1,
           1,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/b2-mid-mod/spec/models/mechanic_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
           null
         ]
       },
@@ -259,8 +276,36 @@
           1,
           null
         ]
+      },
+      "/Users/nirupamaram/turing/2module/b2-mid-mod/spec/models/rides_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/nirupamaram/turing/2module/b2-mid-mod/app/models/ride.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1594999631
+    "timestamp": 1594999672
   }
 }
